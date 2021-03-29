@@ -13,12 +13,16 @@ fi
 setopt interactivecomments
 
 #----------------
-# iTerm2 movement - requires changes to iTerm2 preferences, see https://coderwall.com/p/a8uxma/zsh-iterm2-osx-shortcuts
+# iTerm2 movement - see https://medium.com/@jonnyhaynes/jump-forwards-backwards-and-delete-a-word-in-iterm2-on-mac-os-43821511f0a
 #----------------
 bindkey "[D" backward-word
 bindkey "[C" forward-word
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
+
+# extended command history
+alias h='history'
+alias history='fc -l -100'
 
 #----------------------------------------------
 # Other settings should be imported from bashrc
