@@ -1,8 +1,8 @@
 # Lives in ~/.gitconfig
 
 [user]
-	name = Robin Smith
-	email = robincsmith84@gmail.com
+	name = Robin Banbury
+	email = something@test.com
 [alias]
 	gconfig = config --global
 	ls = log --oneline
