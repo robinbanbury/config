@@ -20,14 +20,6 @@ bindkey "[C" forward-word
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
 
-# extended command history
-alias h='history'
-alias history='fc -l -100'
-
-#----------------------------------------------
-# Other settings should be imported from bashrc
-#----------------------------------------------
-
 #---------------
 # Common aliases
 #---------------
@@ -39,6 +31,7 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 
 alias h='history'
+alias history='fc -l -100'
 #alias j='jobs -l'
 #alias which='type -a'
 alias ..='cd ..'
@@ -94,6 +87,7 @@ alias gst='git stash'
 alias gstls='git stash list'
 alias gstp='git stash pop'
 alias gsts='git stash save'
+alias gswitch='git checkout -'
 alias gurl='git remote get-url origin'
 alias gurlx='git remote get-url'
 
