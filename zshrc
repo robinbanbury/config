@@ -106,6 +106,12 @@ alias ll='ls -l'             #  Long-list files
 alias lr='ll -R'             #  Recursive
 alias la='ls -aF'            #  Add suffixes for directories, executables and symlinks
 
+#---------------------------------------------------
+# Stop backward-kill-word on directory delimiter (/)
+#---------------------------------------------------
+autoload -U select-word-style
+select-word-style bash
+
 #--------------
 # Clang options
 #--------------
