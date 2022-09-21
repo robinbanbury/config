@@ -87,6 +87,12 @@ alias ll='ls -l'             #  Long-list files
 alias lr='ll -R'             #  Recursive
 alias la='ls -aF'            #  Add suffixes for directories, executables and symlinks
 
+#-----------------------------
+# Find text in Maven POM files
+#-----------------------------
+alias findpoms='find . -name pom.xml'
+alias findinpoms='find . -name pom.xml | xargs grep'
+
 #--------------
 # Clang options
 #--------------
