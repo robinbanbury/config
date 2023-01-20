@@ -87,11 +87,18 @@ alias ll='ls -l'             #  Long-list files
 alias lr='ll -R'             #  Recursive
 alias la='ls -aF'            #  Add suffixes for directories, executables and symlinks
 
-#-----------------------------
-# Find text in Maven POM files
-#-----------------------------
+#-------------------
+# Find text in files
+#-------------------
 alias findpoms='find . -name pom.xml'
-alias findinpoms='find . -name pom.xml | xargs grep'
+alias findinpoms='find . -name pom.xml | xargs grep -H'
+
+# findinfiles <filename> <pattern>
+function findinfiles() {
+    readonly filename=${1:?"Filename must be specified."}
+    readonly pattern=${2:?"Search pattern must be specified"}
+    find . -name $filename | xargs grep -H $pattern;
+}
 
 #--------------
 # Clang options
