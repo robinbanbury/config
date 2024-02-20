@@ -10,6 +10,7 @@
     assume = update-index --assume-unchanged
     unassume = update-index --no-assume-unchanged
     assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+    bb = !better-branch.sh  # https://gist.github.com/schacon/e9e743dee2e92db9a464619b99e94eff
 [color]
     ui = true
 [help]
