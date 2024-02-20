@@ -71,6 +71,7 @@ alias gcom='git checkout master'
 alias gd='git diff'
 alias gdn='git diff --name-status'
 alias gds='git diff --staged'
+alias gdw='git diff --word-diff'
 alias ghistory='git log -L'  # git log -L :<methodName>:<path/to/file>
 alias gl='git log'
 alias gll='git log --oneline --decorate --all --graph'
