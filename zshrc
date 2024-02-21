@@ -49,7 +49,7 @@ alias df='df -kh'      # Add a 'T' for *nix to print file system type
 #--------------
 alias ga='git add'
 alias gap='git add -p'
-alias gb='git branch'
+alias gb='git branch --column'
 alias gba='git branch --all'
 alias gbb='better-branch.sh' # https://gist.github.com/schacon/e9e743dee2e92db9a464619b99e94eff
 alias gbd='git branch --delete'
